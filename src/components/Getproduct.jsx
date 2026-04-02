@@ -22,7 +22,7 @@ const Getproduct = () => {
     setLoading("Please wait as we retrieve products...")
     try {
       const response = await axios.get(
-        "http://philloryx.alwaysdata.net/api/get_product_details"
+        "https://philloryx.alwaysdata.net/api/get_product_details"
       )
       setProducts(response.data)
       setLoading("")
