@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import image from '../logo.svg'
+import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 const Mpesapayment = () => {
@@ -36,7 +35,7 @@ setMessages(response.data.message)
 
   return (
     <div className='row justify-content-center' id='form-image'>
-      <h3>LIPA NA MPESA</h3>
+      <h3>PAY WITH MPESA</h3>
       {messages}
       {error}
 
