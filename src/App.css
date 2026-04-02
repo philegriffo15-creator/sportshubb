@@ -1,0 +1,291 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#product{
+  padding-bottom: 2px;
+  border-radius: 2px;
+}
+#head{
+  background-color: black;
+}
+.product_img{
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+} 
+#form-image{
+  background-color: rgb(207, 255, 226);
+  background-size:cover;
+  height: 100%;
+  width: 100%;
+
+}
+
+.main-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #069912;
+  letter-spacing: 1px;
+}
+
+.main-heading span {
+  color: #6f42c1; /* accent color */
+}
+
+.sub-heading {
+  font-size: 1.1rem;
+  color: #0c854d;
+  margin-top: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;              /* Spacing between icons */
+  margin-top: 10px;
+}
+
+/* Bold and white styling for About Us and Connect With Us paragraphs */
+#footer .footer-section p {
+  font-size: 14px;             /* readable size */
+  color: #ffffff;              /* pure white text */
+  font-weight: 600;            /* semi-bold for emphasis */
+  line-height: 1.5;            /* comfortable reading */
+  margin-bottom: 10px;         /* spacing between elements */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* consistent clean font */
+}
+
+/* Footer Headings Styling */
+#footer .footer-section h4 {
+  font-size: 20px;               /* Slightly bigger for visibility */
+  font-weight: 700;              /* Bold to stand out */
+  color: #ffffff;                /* White text for contrast */
+  text-transform: uppercase;     /* All caps for professional look */
+  letter-spacing: 1px;           /* Space between letters */
+  margin-bottom: 15px;           /* Space between heading and content */
+  border-bottom: 2px solid #00ff7f; /* Optional accent underline */
+  padding-bottom: 5px;           /* Space between text and underline */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+}
+
+/* Hover effect for interactivity */
+#footer .footer-section h4:hover {
+  color: #00ff7f;                /* Change text color on hover */
+  transition: color 0.3s ease;   /* Smooth hover transition */
+}
+
+
+
+
+
+
+
+.social-icons img {
+  background-color: white;       /* Base circle color */
+  padding: 4px;                 /* Bigger padding for better shape */
+  border-radius: 90%;            /* Makes it a perfect circle */
+  width: 45px;                   /* Icon size */
+  height: 60px;
+  cursor: pointer;               /* Shows it's clickable */
+  transition: transform 0.3s ease, 
+              box-shadow 0.3s ease, 
+              background-color 0.3s ease; /* Smooth hover transitions */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Hover effects */
+.social-icons img:hover {
+  transform: scale(1.2);                       /* Slightly enlarge */
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);     /* Stronger shadow on hover */
+}
+
+/* Brand color glow on hover */
+.social-icons img[src*="facebook"]:hover {
+  background-color: #1877f2; /* Facebook blue */
+  filter: brightness(1.1);
+}
+
+.social-icons img[src*="twitter"]:hover {
+  background-color: #1da1f2; /* Twitter blue */
+  filter: brightness(1.1);
+}
+
+.social-icons img[src*="instagram"]:hover {
+  background: radial-gradient(circle at 30% 30%, #fdf497, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  filter: brightness(1.1);
+}
+
+#ttl{
+  font-size: 18px;            /* Clear, readable size */
+  font-weight: 700;           /* Bold to stand out */
+  color: #74b30f;             /* White text for contrast */
+  text-transform: uppercase;  /* Optional: all caps for modern look */
+  letter-spacing: 1px;        /* Spacing between letters */
+  margin-bottom: 12px;        /* Space below heading */
+  border-bottom: 2px solid #00ff7f; /* Optional underline (neon green accent) */
+  padding-bottom: 5px;        /* Space between text and underline */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+}
+
+/* Background for the signup section */
+#form-image {
+  background-color: rgb(207, 255, 226); /* soft green */
+  min-height: 100vh;                   /* full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 15px;
+}
+
+/* Card styling */
+#form-image .card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+#form-image .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header styling */
+#form-image #header {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form inputs */
+#signup input.form-control {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* Focus effect on input */
+#signup input.form-control:focus {
+  border-color: #09a2e9;
+  box-shadow: 0 0 5px rgba(40,167,69,0.3);
+  outline: none;
+}
+
+/* Submit button */
+#signup input[type="submit"] {
+  background-color: #285AEB;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#signup input[type="submit"]:hover {
+  background-color: #045816; /* darker green */
+  transform: scale(1.05);
+}
+
+/* Checkbox and terms */
+#signup label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+/* Link styling */
+#signup a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0c0e74;
+  text-decoration: none;
+}
+
+#signup a:hover {
+  text-decoration: underline;
+}
+#agree-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* space between checkbox and text */
+  margin-top: 10px;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 2px solid #011606;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+/* focus effect */
+.search-bar:focus {
+  border-color: #6a7a0b;
+  background-color: #ffffff;
+  
+}
+
+/* placeholder styling */
+.search-bar::placeholder {
+  color: #888;
+}
+.nav-btn {
+  padding: 8px 16px;
+  border: 2px solid #212529;
+  border-radius: 20px;
+  color: #212529;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #212529;
+  color: #ffc107;
+}
